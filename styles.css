@@ -1,22 +1,36 @@
 body{
-    padding: 0;
+    padding:0;
     margin: 0;
     background-color: rgb(0, 33, 71);
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://th.bing.com/th/id/R.a8a469cad638c7eee6176288995b73f7?rik=edqo57qwTO0V6w&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f161382-space-TylerCreatesWorlds-space_art-digital_art-artwork-nebula-stars.jpg&ehk=I5M4IEoHfvEqw%2bp%2f40kKJw8ALMoDHPvzF0hlxbN%2fm6c%3d&risl=&pid=ImgRaw&r=0");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
 }
 .login-card{
-    background-color: rgb(120, 152, 180); 
     display:flex;
     justify-content:space-evenly;
     align-items: center;
     flex-direction: column;
     height:50vh;   
-    width: 80vw; 
-    min-width: 400px;
-    min-height: 300px;
+    width: 30vw; 
+    min-height:15vh ;
+    min-width: 10vw;
+    border:solid black 3px;
+    border-radius: 10%;
+    box-shadow: 7px 7px 2px 0px rgba(34, 34, 34, 0.75);
+    background-color: rgb(163, 191, 215); 
+    overflow: hidden;
 }
 
 button, input{
     cursor: pointer;
 }
+
+
