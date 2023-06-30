@@ -19,9 +19,11 @@ body{
 }
 .space-info{
     display: block;
+    text-align: center;
 }
 .space-info-cond{
     display: none;
+
 }
 .card-style{
     display: flex;
@@ -29,12 +31,12 @@ body{
     align-items: center;
     flex-direction: column;
     height:50vh;   
-    width: 30vw;
+    width: 35vw;
     border:solid black 3px;
     border-radius: 10%;
     box-shadow: 7px 7px 2px 0px rgba(0, 0, 0, 0.75);
     background-color: rgb(163, 191, 215); 
-    overflow: auto;
+    overflow: hidden;
     text-align: center;
 
 }
@@ -42,7 +44,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height:80vh;
+    height:90vh;
     width:100vw;
 }
 
