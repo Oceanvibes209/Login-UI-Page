@@ -1,15 +1,13 @@
+/*Sets the cards and references in the center and in a column so that the footer is at the bottom of the page*/
 body{
     padding:0;
     margin: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    align-content: space-between;
     width: 100vw;
     height: 100vh;
-    min-width: 400px;
-    min-height: 350px;
+    /*Sets up the background with an image, centers the image, and scales it down as the browser shrinks*/
     background-image: url("https://th.bing.com/th/id/R.a8a469cad638c7eee6176288995b73f7?rik=edqo57qwTO0V6w&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f161382-space-TylerCreatesWorlds-space_art-digital_art-artwork-nebula-stars.jpg&ehk=I5M4IEoHfvEqw%2bp%2f40kKJw8ALMoDHPvzF0hlxbN%2fm6c%3d&risl=&pid=ImgRaw&r=0");
     background-attachment: fixed;
     background-size: auto;
@@ -17,15 +15,18 @@ body{
     background-position: center;
 
 }
+/*Centers the text info and adds some space on the edges*/
 .space-info{
     display: block;
     text-align: center;
     width: 30vw;
 }
+/*Hides the alternative text*/
 .space-info-cond{
     display: none;
 
 }
+/*Creates my card design and centers all the info. Rounds the edges and adds a shadow to create an illusion of levitating*/
 .card-style{
     display: flex;
     justify-content:space-evenly;
@@ -41,6 +42,7 @@ body{
     text-align: center;
 
 }
+/*Centers the 2 cards in the center on the main and cross axis */
 .info-login-card{
     display: flex;
     justify-content: space-evenly;
@@ -52,6 +54,7 @@ body{
 button, input{
     cursor: pointer;
 }
+/*Centers the reference info on the bottom*/
 .footer{
     display: flex;
     justify-content:center;
@@ -59,14 +62,25 @@ button, input{
     align-items:center;
     color: beige;
 }
+/*Changes the color for the link only in the footer*/
 .footer a{
-    color: rgb(255, 0, 0);
+    color:blue;
 
 }
-input{
+/*Changes the color to gray when the cursor hovers over the link*/
+a:hover{
+    color: gray;
+}
+/*Rounds out the sides of the input and button to give it a modern look*/
+input, button{
     border-radius: 15px;
 }
-@media screen and (max-width: 900px) {
+/*Changes the background color when the cursor hovers over the button*/
+button:hover{
+    background-color: rgb(32, 155, 232);
+}
+/*Changes the orientation of the cards to stack once the px are equal to or lower than 925px and switches the text in the p element to a shorter version*/
+@media screen and (max-width: 925px) {
     .info-login-card{
         flex-direction: column;
     }
