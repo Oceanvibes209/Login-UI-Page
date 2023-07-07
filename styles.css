@@ -54,6 +54,17 @@ body{
 button, input{
     cursor: pointer;
 }
+input{
+    width:15vw;
+    text-align: center;
+}
+input:hover{
+    background-color: rgb(173, 173, 173);
+
+}
+.login-button{
+    width:10vw;
+}
 /*Centers the reference info on the bottom*/
 .footer{
     display: flex;
