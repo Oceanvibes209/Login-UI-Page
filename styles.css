@@ -41,8 +41,8 @@ body{
     overflow: hidden;
     text-align: center;
     /*Sets the minimum width the cards are allowed to shrink as the browser shrinks*/
-    min-width: 300px;
-    min-height: 350px;
+    min-width: 150px;
+    min-height:250px;
 
 }
 /*Centers the 2 cards in the center on the main and cross axis */
@@ -57,16 +57,17 @@ body{
 button, input{
     cursor: pointer;
     overflow: hidden;
+    min-height: 15px; 
 }
 /*Centers the placeholder text and sets the width of the input bubble*/
 input{
-    width:250px;
+    width:200px;
+    min-width:150px;
     text-align: center;
 }
 /*Makes it easier to see when ur hovering over the username and password input areas*/
 input:hover{
     background-color: rgb(173, 173, 173);
-
 }
 /*Sets the width for only the login button and set the background color to purple when the cursor is hovering over it*/
 .login-button{
@@ -78,10 +79,11 @@ input:hover{
 /*Centers the reference info on the bottom*/
 .footer{
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     flex-direction: column;
     align-items:center;
     color: beige;
+    overflow: hidden;
 }
 /*Changes the color for the link only in the footer*/
 .footer a{
@@ -115,5 +117,11 @@ button:hover{
     .space-info-cond{
         display: block;
     }
-    
 } 
+/*Removes the h1 title in the cards and the reference for the image to add more space when the browser shrinks. Makes the login card easier to access and the info card easier to read.*/
+@media screen and (max-width: 500px){
+    h1, .img-credit {
+        display: none;  
+      }
+
+}
