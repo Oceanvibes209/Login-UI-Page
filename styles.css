@@ -56,10 +56,11 @@ body{
 /*Turns the mouse arrow into a pointer finger only when hovering over both the button and input areas*/
 button, input{
     cursor: pointer;
+    overflow: hidden;
 }
 /*Centers the placeholder text and sets the width of the input bubble*/
 input{
-    width:15vw;
+    width:250px;
     text-align: center;
 }
 /*Makes it easier to see when ur hovering over the username and password input areas*/
@@ -69,7 +70,7 @@ input:hover{
 }
 /*Sets the width for only the login button and set the background color to purple when the cursor is hovering over it*/
 .login-button{
-    width:10vw;
+    width:150px;
 }
 .login-button:hover{
     background-color: rgb(167, 94, 236);
