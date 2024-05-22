@@ -8,7 +8,7 @@ body{
     width: 100vw;
     height: 100vh;
     /*Sets up the background with an image, centers the image, and scales it down as the browser shrinks*/
-    background-image: url("https://th.bing.com/th/id/R.a8a469cad638c7eee6176288995b73f7?rik=edqo57qwTO0V6w&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f161382-space-TylerCreatesWorlds-space_art-digital_art-artwork-nebula-stars.jpg&ehk=I5M4IEoHfvEqw%2bp%2f40kKJw8ALMoDHPvzF0hlxbN%2fm6c%3d&risl=&pid=ImgRaw&r=0");
+    background-image: url("./images/Nebula-Space-Wallpaper.jpg");
     background-attachment: fixed;
     background-size: auto;
     background-repeat: no-repeat;
